@@ -1,49 +1,73 @@
-.header{
+.header {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     background-color: #EAC926;
 }
 
-.bg-lupa{
-    align-items: left;
+.bg-contain-icon-lupa {
     background-color: rgb(236, 234, 234);
     border-radius: 5px;
     padding: 5px;
-    width: 10px;
+    width: 12px;
+    margin-top: 3px;
+    margin-bottom: 15px;
 }
 
-.titulares{
+#contain-msj-credits {
+    position: relative;
+    width: 250px;
+    height: 20px;    
+}
+
+#msj-credits {
+    position: absolute;
+    width: 230px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.titulares {
     font-size: 24;
 }
-.precio{
+
+.precio {
     font-size: 18px;
 }
 
-.descuentos{
+.descuentos {
     font-size: 16px;
 }
 
-.descripciones{
+.descripciones {
     font-size: 16px;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
- 
-.btn_hamburger{
+
+.btn_hamburger {
     align-items: center;
-     display: flex;
+    display: flex;
     justify-content: center;
+    
 }
 
 .burger-menu {
-    background-color:blue;
-    padding: 10px ;
+    background-color: blue;
+    padding: 10px;
     border-radius: 5px;
+    margin-bottom: 25px;
 }
 
-.colorfuentehamburge{
+.colorfuentehamburge {
     color: white;
     font-size: 16px;
+}
+
+.Contain-info-footer{
+    text-align: center;
+    padding: 20px;
 }

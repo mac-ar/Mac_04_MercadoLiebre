@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form{
+    background-color: #d4d0d066 ;    
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+main{
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: 'roboto' ;
+}

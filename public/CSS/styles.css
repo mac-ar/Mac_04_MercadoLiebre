@@ -1,7 +1,33 @@
-.header {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris_oscuro: #666;
+    --Gris_claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+body{
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+}
+
+.header {        
     background-color: #EAC926;
+    padding: 20px;
+}
+.logo{
+    width: 200px;
+}
+
+.msj-credits{
+    font-weight: 400;
+    text-align: center;
 }
 
 .bg-contain-icon-lupa {
@@ -13,19 +39,51 @@
     margin-bottom: 15px;
 }
 
-#contain-msj-credits {
-    position: relative;
-    width: 250px;
-    height: 20px;    
+.main-navbar ul {
+    list-style-type: none;
 }
 
-#msj-credits {
-    position: absolute;
-    width: 230px;
-    height: 15px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);    
+.main-navbar a {
+        text-decoration: none;
+        display: inline-block;
+        color:#666;
+        padding: 10px 0;
+}
+
+.btn_hamburger {
+    background-color:#03264C;
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+
+
+.main {
+    width: 90%;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+/* section article{
+    margin: 10px;
+} */
+
+.descripcion_articulo {
+    background-color: white;
+    border-top: 1px;
+    border-color: #ebebeb;
+    border-style: solid;
+    padding: 10px;
+
+}
+
+.nombreproducto {
+    align-self: flex-end;
 }
 
 .titulares {
@@ -34,40 +92,39 @@
 
 .precio {
     font-size: 18px;
+    flex-grow: 0.3;
+}
+
+.precio_desc {
+    display: flex;
+    flex-direction: row;
 }
 
 .descuentos {
     font-size: 16px;
+    flex-grow: 0.7;
+
 }
 
 .descripciones {
     font-size: 16px;
 }
 
-ul {
-    list-style-type: none;
-}
-
-.btn_hamburger {
-    align-items: center;
+/* FOOTER */
+.Contain-info-footer {
+    margin: 20px 0; 
+    padding: 20px 0;
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items:center;   
+    width: 90%;
 }
-
-.burger-menu {
-    background-color: blue;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 25px;
-}
-
-.colorfuentehamburge {
-    color: white;
-    font-size: 16px;
-}
-
-.Contain-info-footer{
+.Contain-info-footer article{  
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.Contain-info-footer i{   
+    font-size: 2em;
+    margin-bottom: 20px;
 }

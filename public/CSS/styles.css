@@ -15,14 +15,16 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
 
 .header {        
+    width: 90%;
     background-color: #EAC926;
     padding: 20px;
 }
 .logo{
-    width: 200px;
+    width: 150px;
 }
 
 .msj-credits{
@@ -30,13 +32,19 @@ body{
     text-align: center;
 }
 
-.bg-contain-icon-lupa {
+.bg-contain-icon-lupa {    
+    text-align: center;
+    font-size: 14px;
     background-color: rgb(236, 234, 234);
     border-radius: 5px;
     padding: 5px;
-    width: 12px;
-    margin-top: 3px;
-    margin-bottom: 15px;
+    max-width: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.main-navbar{
+    display: none;
 }
 
 .main-navbar ul {
@@ -47,7 +55,7 @@ body{
         text-decoration: none;
         display: inline-block;
         color:#666;
-        padding: 10px 0;
+        padding: 5px 0;
 }
 
 .btn_hamburger {
@@ -57,29 +65,41 @@ body{
     margin: auto;
     display: block;
     text-align: center;
-    max-width: 50px;
-    padding: 15px 0;
+    max-width: 40px;
+    padding: 10px 0;
     border-radius: 8px;
 }
-
-
-.main {
-    width: 90%;
-    text-align: center;
+/*  MAIN  */
+ .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;    
     background-color: #ebebeb;
 }
 
-/* section article{
+ .main article{
     margin: 10px;
-} */
+ }
 
-.descripcion_articulo {
+
+.items_description {
     background-color: white;
-    border-top: 1px;
+    /* border-top: 1px;
     border-color: #ebebeb;
-    border-style: solid;
+    border-style: solid; */
     padding: 10px;
+    display: none;
+}
 
+.bg-icon{
+    width: 40px;
+    border: solid 1px #39b54a;
+    color: #39b54a;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 5px 0;    
 }
 
 .nombreproducto {
@@ -95,9 +115,12 @@ body{
     flex-grow: 0.3;
 }
 
-.precio_desc {
+.descuento {
     display: flex;
     flex-direction: row;
+    color: #39b54a;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .descuentos {
@@ -127,4 +150,33 @@ body{
 .Contain-info-footer i{   
     font-size: 2em;
     margin-bottom: 20px;
+}
+
+/* MEDIA TABLET 361px */
+@media (min-width: 361px){
+    .items_description{
+        display: block;   
+    }
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .main-navbar{
+        display: block;
+    }
+    .btn_hamburger{
+        display: none;
+    }
+}
+
+/* MEDIA DESKTOP 769px */
+@media (min-width: 769px){
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .main-navbar{
+        display: block;
+    }
+    .btn_hamburger{
+        display: none;
+    }
 }

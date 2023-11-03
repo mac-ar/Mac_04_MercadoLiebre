@@ -151,23 +151,22 @@ body {
         display: none;
     }
 
-    
-
-}
-
-/* MEDIA DESKTOP 769px */
-@media (min-width: 769px) {   
-
-    .btn_hamburger {
-        display: none;
-    }
-
     .container-header{    
+        justify-content: space-around;
         align-items: center;
         flex-wrap: nowrap;
         margin-bottom: 10px;
     }   
+    .header-top-bar{
+        justify-content: space-between;
+        align-items: center;	    
+    }
 
+}
+
+/* MEDIA DESKTOP 769px */
+@media (min-width: 769px) {         
+    
     .search-bar input {
         width: 175px;
     }

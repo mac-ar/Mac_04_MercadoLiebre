@@ -5,26 +5,34 @@
     --Gris_oscuro: #666;
     --Gris_claro: #ebebeb;
     --Verde: #39b54a;
+    --primary-100:#FFC107;
+    --primary-200:#dda400;
+    --primary-300:#916400;
+    --accent-100:#FF9800;
+    --accent-200:#8f3d00;
+    --text-100:#000000;
+    --text-200:#929090;    
+    --bg-200:#dfbf16;
+    --bg-300:#b49900;
 }
 
 /*  *********  MAIN  ************ */
 
 .main {
-
-    width: 90%;
+    width: 90%;    
     background-color: #ebebeb;
+    padding-bottom: 20px;
 }
 
-.section-product {
+.section-product {    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
+    align-items: center; 
 }
 
 .main article {
-    margin: 10px;
+    margin: 25px;    
 }
 
 .items_description {
@@ -32,6 +40,11 @@
     padding: 10px;
     display: none;
     position: relative;
+}
+
+.items_description i:hover {
+    transform: rotate(-90deg);
+    transition: 0.5s;
 }
 
 .bg-icon {
@@ -49,10 +62,6 @@
     top: -15px;
 }
 
-.nombreproducto {
-    align-self: flex-end;
-}
-
 .titulares {
     font-size: 24px;    
     align-items: center;
@@ -62,25 +71,31 @@
 .container-price {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    margin-bottom: 5px;   
 }
 
 .precio {
     flex-grow: 0.30;
     font-size: 18px;
     font-weight: bold;
-
 }
 
 .descuento {
     flex-grow: 0.70;
     color: #39b54a;
     font-weight: bold;
-
 }
 
-.descripciones {
-    font-size: 16px;
+.prod-descripcion {   
+    visibility: hidden;     
+    padding: 5px;  
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: solid 1px black;
+    background-color: red; 
 }
 
 .banner-oferta{
@@ -102,12 +117,17 @@
         flex-flow: row wrap;
         
     }
+    .section-product article:hover{    
+        .prod-descripcion{visibility: visible;} 
+        box-shadow: 10px 15px 10px rgb(100, 100, 100) ;
+        /* border: solid 1px red; */
+    }
 
 }
 
 /* MEDIA DESKTOP 769px */
 @media (min-width: 769px) {
-    main article {
+    /* main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }   
+    }    */
 }

@@ -4,7 +4,7 @@
 <head>
     <!-- MI ESTILO -->
     <link rel="stylesheet" href="./CSS/styles.css">
-    <link rel="stylesheet" href="./CSS/register.css">
+    <link rel="stylesheet" href="./CSS/login.css">
 
     <!-- Fuentes Google -->
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Mercado Liebre - Register</title>
+    <title>Mercado Liebre - Login</title>
 </head>
 
 <body>
@@ -69,76 +69,27 @@
                 <li><a href="#">Mis Compras</a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
-
-
     </header>
 
     <main>
         <div class="container">
-            <form action="./home.html" method="post">
-                <h2>Registro de Usuario</h2>
-                <div class="divisor">
-                    <input type="text" name="nomyape" placeholder="Nombre y apellido" minlength="3" maxlength="50" required>
+            <div class="logo-login"></div>
+            <form action="/" method="post">
+                <div class="container-usu-psw">
+                    <h4>Ingrese el Usuario</h4>
+                    <input type="text" name="usu" id="usu">
+                    <h4>Ingrese Password</h4>
+                    <input type="text" name="psw" id="psw">
                 </div>
-                <div class="divisor">
-                    <input type="text" name="usuario" placeholder="Usuario" minlength="5" maxlength="20" required>
-                </div>
-                <div class="divisor">
-                    <input type="email" name="email" placeholder="mac@mercadoliebre.com" required>
-                </div>
-                <div class="divisor">
-                    <h3>Fecha de Nacimiento</h3>
-                    <input type="date" name="date">
-                </div>
-                <div class="divisor">
-                    <input type="text" name="Domicilio" placeholder="Domicilio">
-                </div>
-                <div class="divisor">
-                    <h3>Perfil de Usuario</h3>
-                    <div class="usuario-perfil">
-                        <label for="comprar">Comprar :</label>
-                        <input type="radio" value="comprar" name="perfil" id="comprar" required>
-                        <br>
-                        <label for="vender">Vender :</label>
-                        <input type="radio" value="vender" name="perfil" id="vender" required>
-                    </div>
-                </div>
-                <div class="divisor">
-                    <h3>Categoria de Interes</h3>
-                    <div class="usuario-interes">
-                        <label for="electro">Electro :</label>
-                        <input type="checkbox" name="categoria" value="electro" id="electro">
-                        <label for="moda">Moda :</label>
-                        <input type="checkbox" name="categoria" value="moda" id="moda">
-                        <label for="hogar">Hogar :</label>
-                        <input type="checkbox" name="categoria" value="hogar" id="hogar">
-                        <label for="jugueteria">Jugueteria :</label>
-                        <input type="checkbox" name="categoria" value="jugueteria" id="jugueteria">
-                        <label for="vida sana">Visa Sana :</label>
-                        <input type="checkbox" name="categoria" value="vida sana" id="vida sana">
-                    </div>
-                </div>
-                <div class="divisor">
-                    <h3>Foto de Usuario:</h3>
-                    <div class="usuario-file">
-                        <input type="file" accept=".jpg, .png" name="foto">
-                    </div>
-                </div>
-                <div class="divisor">
-                    <h3>Contraseña</h3>
-                    <input type="password" name="password" minlength="8" maxlength="20" required>
-                    <h3>Confirmar Contraseña</h3>
-                    <input type="password" name="password2" minlength="8" maxlength="20" required>
-                </div>
-                <div class="divisor">
+                <div>
                     <div class="btn-sub-res">
-                        <button type="submit">Enviar</button>
+                        <button type="submit">Ingrear</button>
                         <button type="reset">Borrar</button>
                     </div>
                 </div>
-
             </form>
         </div>
+
     </main>
 
     <footer>

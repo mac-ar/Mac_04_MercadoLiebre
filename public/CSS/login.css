@@ -28,27 +28,38 @@ body {
     font-size: 12px;     
 }
 
-
 main{
     width: 90%;    
+    height: 350px;
     font-size: 14px;
     font-family: 'roboto' ;
     /* background-color:#757575; */
     background-color: #929090;
     padding: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
-.container {
-    max-width: 650px;    
+/* .logo-login {
+    border: solid 1px white;
+    width: 250px;
+    height: 50px;
+    background-color: #dda400;
+    position: absolute;
+} */
+
+.container{
+    /* border: dotted 5px black; */
+    max-width: 500px;    
     margin: auto;
 }
 
 form{
     background-color: var(--Amarillo);    
     width: 88%;    
-    margin: auto;    
+    margin: 10px auto;    
     padding: 0px;
-    border: solid 3px white;
+    border: solid 3px white;    
 }
 
 form input[type=text], input[type=email], input[type=date], input[type=password] {
@@ -62,20 +73,12 @@ form input[type=text], input[type=email], input[type=date], input[type=password]
     padding: 0 0 0 5px;
 }
 
-form h2 {
-    margin: 10px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-}
-
 form h3{
     margin: 7px;
-    color: white;
-    font-weight: bold;
+    padding: 0   10px;
 }
 
-form button{
+button{
     width: 120px;
     height: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -86,66 +89,25 @@ form button{
     border: solid 2px #FF9800;
 }
 
-.divisor{
-    margin: 10px;
-}
-
-  
-.usuario-perfil{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
-    display: flex;
-    flex-direction: row;  
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;  
-    padding: 10px; 
-    border: solid 2px #FF9800;    
-    background-color: white;
-    max-width: 470px;
-}
-
-form input:checked{
-    
-    background: #FF9800;
-}
-
-.usuario-interes{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
-    display: flex;    
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:6px;
-    padding: 10px;
-    border: solid 2px #FF9800;    
-    background-color: white;    
-    max-width: 470px;
-    
-}
-
-.usuario-file{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
-    display: flex;    
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:6px;
-    padding: 10px;
-    border: solid 2px #FF9800;    
-    background-color: white;    
-    max-width: 470px;
-}
-
-.btn-sub-res{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 button[type=submit]:hover, button[type=reset]:hover {
     background-color: #FF9800;
     border: solid 2px white;
     color: white;
 }
-   
 
+.btn-sub-res{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container-usu-psw{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;    
+    align-items: center;
+    padding: 10px 0;
+
+}

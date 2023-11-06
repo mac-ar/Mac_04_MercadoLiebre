@@ -118,9 +118,8 @@
         
     }
     .section-product article:hover{    
-        .prod-descripcion{visibility: visible;} 
-        box-shadow: 10px 15px 10px rgb(100, 100, 100) ;
-        /* border: solid 1px red; */
+        .prod-descripcion{visibility: visible;}; 
+        box-shadow: 10px 15px 10px rgb(100, 100, 100) ;       
     }
 
 }

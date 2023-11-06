@@ -117,9 +117,13 @@
         flex-flow: row wrap;
         
     }
-    .section-product article:hover{    
-        .prod-descripcion{visibility: visible;}; 
+    .section-product article:hover{   
+        
         box-shadow: 10px 15px 10px rgb(100, 100, 100) ;       
+    }
+
+    .section-product article:hover .prod-descripcion{    
+        visibility: visible;               
     }
 
 }

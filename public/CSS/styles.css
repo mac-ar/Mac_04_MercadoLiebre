@@ -145,7 +145,7 @@ footer i{
     color: #0a74e6;    
 }
 
-footer i:hover {
+footer article:hover i {
     color: #FF0000;
 }
 

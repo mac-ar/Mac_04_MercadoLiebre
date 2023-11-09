@@ -29,8 +29,14 @@ body {
     font-size: 12px; 
 }
 
+.main-container {
+    padding: 5px 0px;
+    width: 98%;
+    margin: auto;
+}
+
 .header {
-    width: 90%;
+    width: 100%;
     background-color: #EAC926;
     padding: 10px;
 }

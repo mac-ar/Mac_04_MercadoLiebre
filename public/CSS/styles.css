@@ -27,14 +27,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px; 
-    background-color: #ebebeb;
+    /* background-color: #ebebeb; */
 }
 
-.main-container {
+/* .main-container {
     padding: 5px 0px;
     width: 100%;
     margin: auto;
-}
+} */
 
 .header {
     width: 100%;

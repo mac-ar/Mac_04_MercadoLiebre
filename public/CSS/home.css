@@ -22,7 +22,7 @@
     width:90%;    
     background-color: #ebebeb;
     padding-bottom: 20px;
-    margin: auto;
+    margin-inline: auto;
 }
 
 .section-product {    
@@ -33,14 +33,14 @@
 }
 
 .main article {    
-    margin: 25px;    
+    margin: 10px;    
 }
 
 .items_description {
     border: solid 1px #ebebeb;
     background-color: white;
     padding: 15px;
-    display: none;
+    display: block;
     position: relative;
 }
 

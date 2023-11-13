@@ -34,8 +34,9 @@ main{
     font-size: 14px;
     font-family: 'roboto' ;
     /* background-color:#757575; */
-    background-color: #929090;
+    /* background-color: #929090; */
     padding: 10px 0;
+    margin: auto;
 }
 
 .container {

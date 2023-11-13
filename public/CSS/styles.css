@@ -27,7 +27,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px; 
-    /* background-color: #ebebeb; */
+    background-color: #ebebeb;
 }
 
 /* .main-container {
@@ -134,7 +134,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
+    background-color: white;
 }
 
 .Contain-info-footer article {

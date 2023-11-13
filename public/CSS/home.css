@@ -19,9 +19,10 @@
 /*  *********  MAIN  ************ */
 
 .main {
-    width:100%;    
+    width:90%;    
     background-color: #ebebeb;
     padding-bottom: 20px;
+    margin: auto;
 }
 
 .section-product {    
@@ -31,13 +32,14 @@
     align-items: center; 
 }
 
-.main article {
+.main article {    
     margin: 25px;    
 }
 
 .items_description {
+    border: solid 1px #ebebeb;
     background-color: white;
-    padding: 10px;
+    padding: 15px;
     display: none;
     position: relative;
 }

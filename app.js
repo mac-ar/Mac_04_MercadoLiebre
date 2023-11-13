@@ -8,7 +8,7 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, './public')));
 
 //Declaro el puerto por donde escucha el servidor
-let port = 3030
+let port = process.env.PORT || 3000
 
 //Inicio Servidor
 app.listen(port, () => console.log(`Servidor Activo y escuchando por puerto: ${port}`));
